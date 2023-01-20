@@ -41,14 +41,4 @@ python -m unittest tests.test_pairs
 ## Additional notes
 The algorithm is efficient and correct, running in O(n) time.
 
-### Todo
-
-[ ] python find_pairs.py 1,9,5,0,20,-4,12,16,7 12
-[ ] readable code
-[ ] good unit tests
-[ ] clean code
-
-[ ] returning the correct results for all possible inputs
-[ ] All edge cases should be handled appropriately
-[ ] README file explaining how to run the code
 
