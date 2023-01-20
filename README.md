@@ -19,12 +19,16 @@ Where <numbers> is a comma separated list of integers and <target> is the target
 For example:
 
 ```bash
-python pairs.py 1,9,5,0,20,-4,12,16,7 12
+python find_pairs.py 1,9,5,0,20,-4,12,16,7 12
 ```
 
 This will return:
 ```bash
-[(12, 0), (5, 7), (16, -4)]
+
++ 5,7
++ 0,12
++ 16,-4
+
 ```
 
 ## Input validation

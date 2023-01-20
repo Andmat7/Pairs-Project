@@ -5,7 +5,7 @@ def getParamsFromTerminal():
     return numbers,target
 
 def format_pairs(pairs):
-    formatted_pairs = ""
+    formatted_pairs = "\n"
     for pair in pairs:
         formatted_pairs += "+ " + ",".join(map(str, pair)) + "\n"
     return formatted_pairs    

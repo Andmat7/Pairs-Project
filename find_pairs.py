@@ -1,5 +1,6 @@
 from utils.terminal import format_pairs, getParamsFromTerminal
 
+
 def find_pairs(numbers_list, target):
     without_complement = set() # A set to collect the numbers that do not have a partner
     pairs = set() # to collect all pairs that match the target sum.
@@ -15,6 +16,7 @@ def find_pairs(numbers_list, target):
             # If number is not matched, add it to the unmatched numbers
             without_complement.add(num)
     return pairs
+
 
 try:
     numbers, target = getParamsFromTerminal()
