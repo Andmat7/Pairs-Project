@@ -1,4 +1,4 @@
-import sys
+from utils.terminal import format_pairs, getParamsFromTerminal
 
 def find_pairs(numbers_list, target):
     without_complement = set() # A set to collect the numbers that do not have a partner
@@ -16,10 +16,8 @@ def find_pairs(numbers_list, target):
             without_complement.add(num)
     return pairs
 
-
 try:
-    numbers = set(map(int, sys.argv[1].split(',')))
-    target = int(sys.argv[2])
-    print(find_pairs(numbers, target))
+    numbers, target = getParamsFromTerminal()
+    print(format_pairs(find_pairs(numbers, target)))
 except IndexError:
     print("Error: Please provide a list of numbers and a target as arguments. Example: python pairs.py 1,2,3,4 5")
