@@ -33,7 +33,6 @@ This will return:
 
 ## Additional notes
 The algorithm is efficient and correct, running in O(n) time.
-The script also includes additional functions parse_numbers and handle_input_error for input validation and error handling.
 
 ### Todo
 

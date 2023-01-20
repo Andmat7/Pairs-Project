@@ -1,4 +1,4 @@
-from utils.terminal import getParamsFromTerminal, print_pairs
+from utils.terminal import get_params_from_terminal, print_pairs, show_error_terminal
 
 
 def find_pairs(numbers_list, target):
@@ -19,7 +19,7 @@ def find_pairs(numbers_list, target):
 
 
 try:
-    numbers, target = getParamsFromTerminal()
+    numbers, target = get_params_from_terminal()
     print_pairs(find_pairs(numbers, target))
 except IndexError:
-    print("Error: Please provide a list of numbers and a target as arguments. Example: python pairs.py 1,2,3,4 5")
+    show_error_terminal()
