@@ -1,19 +1,19 @@
 import sys
 
 def find_pairs(numbers, target):
-    num_set = set()
-    # Create an empty list to store the pairs
-    pairs = set()
+    numbers_without_complement = set() # A set to collect the numbers that do not have a partner
+    pairs = set() # to collect all pairs that match the target sum.
 
-    # Iterate through the list of numbers
     for num in numbers:
         # Check if the current number's complement (target - num) is in the set
-        if target - num in num_set:
-            # If it is, add it to the pairs list
-            pairs.add(frozenset({num, target - num}))
+        complement = target - num
+        if complement in numbers_without_complement:
+            # If it is, add it to the pairs set
+            pair = frozenset({num, complement})
+            pairs.add(pair)
         else:
-            # If not, add the current number to the set
-            num_set.add(num)
+            # If number is not matched, add it to the unmatched numbers
+            numbers_without_complement.add(num)
     return pairs
 
 if __name__ == '__main__':

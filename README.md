@@ -48,14 +48,19 @@ The script also includes additional functions parse_numbers and handle_input_err
 + 16,-4
 ​
 ```
-
-
+### Todo
+[ ]readable code
 [ ] Your app doesn't need to have identical input/output mechanisms.
 
 [ ]you could read from a file instead of the command line.
+[ ]good unit tests
+[ ]clean code
 
-
+[ ] returning the correct results for all possible inputs
+[ ]Any assignment that doesn't return the correct answer for the sample input
+above will fail.
 [ ]You can assume that all input values are integers. 
 [ ] You can assume that there aren't any repeat values in the list.
 [ ]All edge cases should be handled appropriately
 [ ] clean and readable code
+[ ]README file explaining how to run the code
