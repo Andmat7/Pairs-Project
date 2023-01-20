@@ -31,29 +31,17 @@ This will return:
 
 ```
 
-## Input validation
-
-The script validates the input and returns an error message if invalid input is provided. The input must be a string of comma separated integers followed by an integer.
-Evaluation
-
-The algorithm is efficient and correct, running in O(n) time.
 ## Additional notes
-
+The algorithm is efficient and correct, running in O(n) time.
 The script also includes additional functions parse_numbers and handle_input_error for input validation and error handling.
 
 ### Todo
-[ ]readable code
-[ ] Your app doesn't need to have identical input/output mechanisms.
 
-[ ]you could read from a file instead of the command line.
-[ ]good unit tests
-[ ]clean code
+[ ] python find_pairs.py 1,9,5,0,20,-4,12,16,7 12
+[ ] readable code
+[ ] good unit tests
+[ ] clean code
 
 [ ] returning the correct results for all possible inputs
-[ ]Any assignment that doesn't return the correct answer for the sample input
-above will fail.
-[ ]You can assume that all input values are integers. 
-[ ] You can assume that there aren't any repeat values in the list.
-[ ]All edge cases should be handled appropriately
-[ ] clean and readable code
-[ ]README file explaining how to run the code
+[ ] All edge cases should be handled appropriately
+[ ] README file explaining how to run the code
