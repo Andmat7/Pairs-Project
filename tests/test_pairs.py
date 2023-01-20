@@ -11,19 +11,20 @@ class TestFindPairs(unittest.TestCase):
         output = pairs.find_pairs(numbers, target)
         self.assertEqual(output, expected_output)
 
-    # def test_no_pairs(self):
-    #     numbers = [1, 2, 3, 4]
-    #     target = 10
-    #     expected_output = set()
-    #     output = pairs.find_pairs(numbers, target)
-    #     self.assertEqual(output, expected_output)
+    def test_no_pairs(self):
+        numbers = [1, 2, 3, 4]
+        target = 10
+        expected_output = set()
+        output = pairs.find_pairs(numbers, target)
+        self.assertEqual(output, expected_output)
 
-    # def test_negative_numbers(self):
-    #     numbers = [-5, -3, -2, 0, 5, 7]
-    #     target = 2
-    #     expected_output = set((-5, 7), (-3, 5))
-    #     output = pairs.find_pairs(numbers, target)
-    #     self.assertEqual(output, expected_output)
+    def test_negative_numbers(self):
+        numbers = [-5, -3, -2, 0, 5, 7]
+        target = 2
+        expected_output = set(
+            [frozenset([-5, 7]), frozenset([-3, 5])])
+        output = pairs.find_pairs(numbers, target)
+        self.assertEqual(output, expected_output)
 
 
 if __name__ == '__main__':
