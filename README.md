@@ -1,7 +1,8 @@
 # Pairs Project
 
 This project contains a function find_pairs that finds pairs of integers from a list that sum to a given value.
-How to run
+
+## How to run
 
 The project requires python 3 to be installed on your system.
 

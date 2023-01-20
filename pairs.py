@@ -1,7 +1,6 @@
 import sys
 
 def find_pairs(numbers, target):
-    # Create an empty set to store the numbers
     num_set = set()
     # Create an empty list to store the pairs
     pairs = []
