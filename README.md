@@ -30,7 +30,14 @@ This will return:
 + 16,-4
 
 ```
+### Run the Unit Tests
 
+To run the unit tests in this project, open a terminal in the root directory of the project and run the following command:
+
+```shell
+python -m unittest tests.test_pairs
+
+```
 ## Additional notes
 The algorithm is efficient and correct, running in O(n) time.
 
@@ -44,3 +51,4 @@ The algorithm is efficient and correct, running in O(n) time.
 [ ] returning the correct results for all possible inputs
 [ ] All edge cases should be handled appropriately
 [ ] README file explaining how to run the code
+
