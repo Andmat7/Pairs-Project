@@ -12,7 +12,7 @@ Run the script with the command:
 
 ```bash
 
-python pairs.py <numbers> <target>
+python find_pairs.py <numbers> <target>
 ```
 Where <numbers> is a comma separated list of integers and <target> is the target integer.
 
@@ -41,17 +41,6 @@ The algorithm is efficient and correct, running in O(n) time.
 
 The script also includes additional functions parse_numbers and handle_input_error for input validation and error handling.
 
-
-
-
-```
-> app 1,9,5,0,20,-4,12,16,7 12
-​
-+ 12,0
-+ 5,7
-+ 16,-4
-​
-```
 ### Todo
 [ ]readable code
 [ ] Your app doesn't need to have identical input/output mechanisms.

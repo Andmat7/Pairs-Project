@@ -8,4 +8,7 @@ def format_pairs(pairs):
     formatted_pairs = "\n"
     for pair in pairs:
         formatted_pairs += "+ " + ",".join(map(str, pair)) + "\n"
-    return formatted_pairs    
+    return formatted_pairs
+
+def print_pairs(pairs):
+    print(format_pairs(pairs))
